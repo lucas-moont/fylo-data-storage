@@ -72,9 +72,32 @@ button img{
 .container div:last-child{
     background-color: #1e2c69;
     color: white;
-    padding: 40px 30px;
+    padding: 45px 25px;
     align-self: flex-end;
     border-radius: 10px;
+    width: 35%;
+    position: relative;
+}
+
+.container div:last-child .freeSpace {
+    display: inline-flex;
+    background: white;
+    padding: 20px 15px;
+    color: #0c122c;
+    border-radius: 10px;
+    position: absolute;
+    width: 150px;
+    top: -28px;
+    right: 20px;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.freeSpace h1{
+    line-height: 12px;
+    margin-right: 5px;
+    font-size: 30px;
 }
 
 .container div:last-child .range {
@@ -83,12 +106,13 @@ button img{
     background-color: #0c122c;
     margin: 10px 0;
     display: flex;
+    width: 100%;
 }
 
 .container div:last-child .rangeBar{
     background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     padding: 2px;
-    width: 85%;
+    width: 81.5%;
     height: 100%;
     align-self: center;
     border-radius: 10px;
