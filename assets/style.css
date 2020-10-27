@@ -12,6 +12,12 @@ body{
     background-position-y: 50vh;
     background-position-x: center;
     background-color: #0c122c;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
 }
 
 .attribution{
@@ -22,7 +28,6 @@ body{
 }
 
 .container{
-    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -60,4 +65,44 @@ button{
 
 button img{
     height: 20px;
+}
+
+/* second child */
+
+.container div:last-child{
+    background-color: #1e2c69;
+    color: white;
+    padding: 40px 30px;
+    align-self: flex-end;
+    border-radius: 10px;
+}
+
+.container div:last-child .range {
+    height: 15px;
+    padding: 2px;
+    background-color: #0c122c;
+    margin: 10px 0;
+    display: flex;
+}
+
+.container div:last-child .rangeBar{
+    background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 2px;
+    width: 85%;
+    height: 100%;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div:last-child span{
+    background-color: white;
+    color: black;
+}
+
+.circle{
+    height: 100%;
+    width: 8px;
+    border-radius: 50%;
 }
