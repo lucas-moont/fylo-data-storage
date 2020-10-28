@@ -76,7 +76,10 @@ button img{
     border-radius: 10px;
     width: 35%;
     min-width: 320px;
+    max-width: 393.75px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container div:last-child .freeSpace {
@@ -107,8 +110,9 @@ button img{
     background-color: #0c122c;
     margin: 10px 0;
     display: flex;
-    min-width: 100%;
+    min-width: 95%;
     border-radius: 10px;
+    margin: 10px auto;
 }
 
 .container div:last-child .rangeBar{
@@ -120,11 +124,18 @@ button img{
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
 }
 
 div:last-child span{
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+div:last-child .range span{
     background-color: white;
     color: black;
+    margin: 0;
 }
 
 .circle{
@@ -138,7 +149,6 @@ div:last-child span{
     min-width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 .container div:last-child .bottomText span{
@@ -183,9 +193,10 @@ div:last-child span{
         content: '';
         display: block;
         position: absolute;
-        right: 5px;
-        bottom: -30px;
+        right: 0px;
+        bottom: -13px;
         border: 20px solid;
         border-color: #ffffff transparent transparent transparent;
+        transform: rotate(90deg);
     }
 }
