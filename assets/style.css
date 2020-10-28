@@ -22,8 +22,7 @@ body{
 
 .attribution{
     position: absolute;
-    left: 50%;
-    margin-left: -129.3985px;
+    left: calc(50% - 144.086px);
     bottom: 16px;
 }
 
@@ -76,6 +75,7 @@ button img{
     align-self: flex-end;
     border-radius: 10px;
     width: 35%;
+    min-width: 320px;
     position: relative;
 }
 
@@ -91,6 +91,7 @@ button img{
     right: 20px;
     align-items: center;
     font-size: 12px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -106,13 +107,14 @@ button img{
     background-color: #0c122c;
     margin: 10px 0;
     display: flex;
-    width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
 }
 
 .container div:last-child .rangeBar{
     background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     padding: 2px;
-    width: 81.5%;
+    min-width: 81.5%;
     height: 100%;
     align-self: center;
     border-radius: 10px;
@@ -129,4 +131,61 @@ div:last-child span{
     height: 100%;
     width: 8px;
     border-radius: 50%;
+}
+
+.container div:last-child .bottomText{
+    padding: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.container div:last-child .bottomText span{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/*responsivity */
+
+@media (max-width: 720px){
+
+    body{
+        background-image: url(/images/bg-mobile.png);
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container div:last-child{
+        align-self: center;
+        margin-top: 15px;
+    }
+
+    .container div:first-child{
+        margin: 0;
+    }
+
+    .container div:last-child .freeSpace{
+        top: auto;
+        bottom: -27px;
+        left: calc(50% - 75px);
+    }
+
+}
+
+@media (min-width: 720px){
+    .freeSpace::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 5px;
+        bottom: -30px;
+        border: 20px solid;
+        border-color: #ffffff transparent transparent transparent;
+    }
 }
