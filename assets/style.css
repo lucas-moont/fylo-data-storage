@@ -24,6 +24,7 @@ body{
     position: absolute;
     left: calc(50% - 144.086px);
     bottom: 16px;
+    color: #ffffff;
 }
 
 .container{
@@ -96,7 +97,7 @@ button img{
     text-transform: uppercase;
 }
 
-.freeSpace h1{
+.freeSpace h4{
     line-height: 12px;
     margin-right: 5px;
     font-size: 30px;
